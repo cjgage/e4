@@ -1,0 +1,63 @@
+
+<!-- saved from url=(0030)https://e4house.mybluemix.net/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!--<base href="/">--><base href=".">
+    <title>Conversation Chat App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="og:image" content="conversation.svg">
+    <meta property="og:title" content="Conversation Chat Simple">
+    <meta property="og:description" content="Sample application that shows how to use the Conversation API to identify user intents">
+    <link rel="shortcut icon" href="https://e4house.mybluemix.net/favicon.ico" type="image/x-icon">
+    <script src="./Conversation Chat App_files/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./Conversation Chat App_files/Microphone.js"></script>
+    <script type="text/javascript" src="./Conversation Chat App_files/SpeechToText.js"></script>
+    <script type="text/javascript" src="./Conversation Chat App_files/speechsearch.js"></script>
+    <link rel="stylesheet" href="./Conversation Chat App_files/app.css">
+<style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style></head>
+
+<body>
+  <audio autoplay="true" id="audio" controls="controls" class="hidden" src="/api/synthesize?text=The area of the roof is 73 square metres" type="audio/ogg; codecs=opus">
+              Your browser does not support the audio element.
+</audio>
+    <div class="header">E4 Smart Home
+        <img src="./Conversation Chat App_files/wienerberger.png">
+    </div>
+
+    <div class="flexContainer">
+      <div class="iframeContainer"><iframe id="iframe" width="100%" height="100%" src="./Conversation Chat App_files/saved_resource.html"></iframe></div>
+        <div class="speechContainer">
+            <h2>Smart Assistant</h2>
+                    <div class="chat-column">
+                        <div id="scrollingChat"><div class="segments load"><div class="from-watson top"><div class="message-inner"><p>Hi this is the e4 concierge, how can I help you?</p></div></div></div><div class="segments load"><div class="from-user latest top"><div class="message-inner"><p>how big is the roof</p></div></div></div><div class="segments load"><div class="from-watson latest top"><div class="message-inner"><p>The area of the roof is 73 square metres</p></div></div></div></div>
+                        <label for="textInput" class="inputOutline">
+                          <span id="microphone" class="available"></span>
+                            <input id="textInput" class="input responsive-column" placeholder="Type or say something" type="text" onkeydown="ConversationPanel.inputKeyDown(event, this)" style="width:calc(100% - 100px)">
+                        </label>
+
+                    </div>
+        </div>
+    </div>
+
+
+    <script src="./Conversation Chat App_files/common.js"></script>
+    <script src="./Conversation Chat App_files/api.js"></script>
+    <script src="./Conversation Chat App_files/conversation.js"></script>
+    <script src="./Conversation Chat App_files/global.js"></script><div id="textInputDummy" style="font-size: 16px; font-style: normal; font-weight: 400; font-family: &quot;Helvetica Neue for IBM&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 21px; text-transform: none; letter-spacing: 0.24px;">how big is the roof</div>
+
+
+
+<div style="background-color: rgb(255, 143, 0); display: none; color: white; text-align: center; position: fixed; top: 0px; left: 0px; width: 100%; height: auto; min-width: 100%; min-height: auto; max-width: 100%; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, Geneva, sans-serif; cursor: pointer; padding: 5px;"><span style="color: white; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, Geneva, sans-serif;">You have turned off the paragraph player. You can turn it on again from the options page.</span><img src="chrome-extension://gfjopfpjmkcfgjpogepmdjmcnihfpokn/img/icons/icon-close_16.png" style="width: 20px; height: auto; min-width: 20px; min-height: auto; max-width: 20px; float: right; margin-right: 10px;"></div></body></html>
